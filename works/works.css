@@ -1,0 +1,27 @@
+.works{
+    padding: 10rem 0 6rem;
+}
+.works__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 2.5rem; 
+}
+
+.works__container div{
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.works__container div:hover{
+    filter: saturate(1);
+    transform: scale(1.2);
+}
+
+ @media screen and (max-width: 600px){
+    .works__container {
+        gap: 1.6rem;
+    }
+    .works__container div:hover{
+        transform: scale(1);
+    }
+    
+ }
